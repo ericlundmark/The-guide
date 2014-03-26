@@ -1,0 +1,22 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  {{loginButtons align="right"}}<br>
+  <h1>Restaurants</h1>
+  {{> restaurants }}
+  {{> addRestaurant}}
+</body>
+
+<template name="restaurants">
+  {{#each restaurants}}
+    <strong>Submitter</strong>: {{submitter}}
+	<strong>Name</strong>: {{name}}<br>
+  {{/each}}
+</template>
+
+<template name="addRestaurant">
+  <form name="restaurantForm">
+	<p>Name: <input type="text" id="name"></p>	
+  </form>
+</template>
