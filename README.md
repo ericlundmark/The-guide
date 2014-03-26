@@ -1,5 +1,4 @@
-#The guide
-Restaurant rating web app written in Meteor
+#The guide - Restaurant rating web app written in Meteor
 
 ##Functional specification
 
