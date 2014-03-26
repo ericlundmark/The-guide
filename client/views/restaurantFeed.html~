@@ -1,0 +1,6 @@
+<template name="restaurants">
+  {{#each restaurants}}
+    <strong>Submitter</strong>: {{submitter}}
+	<strong>Name</strong>: {{name}}<br>
+  {{/each}}
+</template>

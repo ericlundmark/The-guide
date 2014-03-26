@@ -1,0 +1,4 @@
+Template.index.events({
+	'click #signUp':function(event){
+		}
+});

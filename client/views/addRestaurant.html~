@@ -1,0 +1,38 @@
+<head>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">   </script>
+</head>
+<template name="addRestaurant">
+  {{> maps}}
+  <div class="container">
+	<form name="restaurantForm" class="form-horizontal" role="form">
+	  <div class="form-group">
+		<label for="name" class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-10">
+		  <input type="text" class="form-control" id="name" placeholder="Name">
+		</div>
+	  </div>
+	  <div class="form-group">
+		<label for="cuisine" class="col-sm-2 control-label">Cuisine</label>
+		<div class="col-sm-10">
+		  <input type="text" class="form-control" id="cuisine" placeholder="Cuisine">
+		</div>
+	  </div>
+	  <div class="form-group">
+		<label for="price" class="col-sm-2 control-label">Price</label>
+		<div class="col-sm-10">
+		  <input type="text" class="form-control" id="price" placeholder="Price">
+		</div>
+	  </div>
+	  <div class="form-group">
+		<label for="city" class="col-sm-2 control-label">City</label>
+		<div class="col-sm-10">
+		  <input type="text" class="form-control" id="city" placeholder="City">
+		</div>
+	  </div>
+	</form>
+  </div>
+</template>
+
+<template name="maps">
+  <div class="container" id="map-canvas"></div>
+</template>

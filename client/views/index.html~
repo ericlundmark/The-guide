@@ -1,0 +1,6 @@
+<body>
+  {{> carousel}}
+</body>
+<template name=carousel>
+
+</template>

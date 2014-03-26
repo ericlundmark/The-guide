@@ -1,0 +1,33 @@
+Template.addRestaurant.events = {
+	'submit form' : function (event) {
+		console.log("adding");
+		if (Meteor.user())
+			var name = Meteor.user().profile.name;
+		else
+			var name = 'Anonymous';
+		var restaurantName = document.getElementById('name');
+
+		if (restaurantName.value != '') {
+			Restaurants.insert({
+				submitter: name,
+				name: restaurantName.value,
+				time: Date.now(),
+			});
+
+			document.getElementById('name').value = '';
+			restaurantName.value = '';
+		}
+		return false;
+	}
+}
+
+Template.maps.rendered = function() {
+    var mapOptions = {
+        center: new google.maps.LatLng(-34.397, 150.644),
+        zoom: 8,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    var map = new google.maps.Map(document.getElementById("map-canvas"),
+        mapOptions);   
+}
