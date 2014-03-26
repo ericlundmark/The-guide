@@ -1,0 +1,3 @@
+local
+# Ignore all emacs backup files
+*~
