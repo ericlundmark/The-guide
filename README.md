@@ -1,4 +1,6 @@
-#The guide - Restaurant rating web app written in Meteor
+#The guide
+
+Restaurant rating web app written in Meteor
 
 ##Functional specification
 
@@ -6,17 +8,17 @@ The projects main goal is to supply a platform that allows rating, adding and se
 
 ###The possible actions for a logged in user
 A user that has logged in will be able to perform the following tasks:
-*Add a restaurant
-*View restaurants
-*Search restaurants
-*Comment on a restaurant
-*Upvote a restaurant
+* Add a restaurant
+* View restaurants
+* Search restaurants
+* Comment on a restaurant
+* Upvote a restaurant
 
 ###The possible actions for a user that has not logged in
 A user that has not logged in will be able to perform the following tasks:
-*View a restaurant
-*Search restaurants
-=========
+* View a restaurant
+* Search restaurants
+
 ##Technological specification
 
 ###Server and client framework
